@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5176D22E1B0BD87A00438C54 /* Debug-universal in Resources */ = {isa = PBXBuildFile; fileRef = 5176D22D1B0BD87A00438C54 /* Debug-universal */; };
-		5176D2311B0BD94500438C54 /* IntroMiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5176D22F1B0BD8F400438C54 /* IntroMiKit.framework */; };
-		5176D2321B0BD94500438C54 /* IntroMiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5176D22F1B0BD8F400438C54 /* IntroMiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5176D23C1B0D254F00438C54 /* introMi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5176D23B1B0D254F00438C54 /* introMi.png */; };
 		51C87AC71B092D8D00BF17B5 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C87AC61B092D8D00BF17B5 /* RegisterViewController.m */; };
 		51C87ACC1B092E4F00BF17B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C87ACA1B092E4F00BF17B5 /* Main.storyboard */; };
 		51C8A0E71B091CCD00A9E404 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C8A0DA1B091CCD00A9E404 /* CustomTableCell.m */; };
@@ -19,18 +17,20 @@
 		51C8A0EB1B091CCD00A9E404 /* IntroMiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C8A0E01B091CCD00A9E404 /* IntroMiAppDelegate.m */; };
 		51C8A0EC1B091CCD00A9E404 /* IntroMiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C8A0E21B091CCD00A9E404 /* IntroMiTableViewController.m */; };
 		51C8A0ED1B091CCD00A9E404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C8A0E31B091CCD00A9E404 /* main.m */; };
+		51D88B301B0D58E600E6505B /* IntroMiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D88B2C1B0D44E700E6505B /* IntroMiKit.framework */; };
+		51D88B311B0D58E600E6505B /* IntroMiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51D88B2C1B0D44E700E6505B /* IntroMiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4DB43A319680299001826C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DB43A219680299001826C4 /* CoreGraphics.framework */; };
 		F4DB43A519680299001826C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DB43A419680299001826C4 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		512A26ED1B095D2400750402 /* Embed Frameworks */ = {
+		51D88B321B0D58E600E6505B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5176D2321B0BD94500438C54 /* IntroMiKit.framework in Embed Frameworks */,
+				51D88B311B0D58E600E6505B /* IntroMiKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,8 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5176D22D1B0BD87A00438C54 /* Debug-universal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Debug-universal"; sourceTree = "<group>"; };
-		5176D22F1B0BD8F400438C54 /* IntroMiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IntroMiKit.framework; sourceTree = "<group>"; };
+		5176D23B1B0D254F00438C54 /* introMi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = introMi.png; sourceTree = SOURCE_ROOT; };
 		51C87AC61B092D8D00BF17B5 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = IntroMi/RegisterViewController.m; sourceTree = SOURCE_ROOT; };
 		51C87ACB1B092E4F00BF17B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IntroMi/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		51C8A0D91B091CCD00A9E404 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableCell.h; path = IntroMi/CustomTableCell.h; sourceTree = SOURCE_ROOT; };
@@ -55,6 +54,7 @@
 		51C8A0E31B091CCD00A9E404 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IntroMi/main.m; sourceTree = SOURCE_ROOT; };
 		51C8A0E41B091CCD00A9E404 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = IntroMi/RegisterViewController.h; sourceTree = SOURCE_ROOT; };
 		51D70C061B0656E200E09789 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		51D88B2C1B0D44E700E6505B /* IntroMiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IntroMiKit.framework; sourceTree = "<group>"; };
 		F4DB439D19680299001826C4 /* IntroMiTestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroMiTestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DB43A019680299001826C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4DB43A219680299001826C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +68,7 @@
 			files = (
 				F4DB43A319680299001826C4 /* CoreGraphics.framework in Frameworks */,
 				F4DB43A519680299001826C4 /* UIKit.framework in Frameworks */,
-				5176D2311B0BD94500438C54 /* IntroMiKit.framework in Frameworks */,
+				51D88B301B0D58E600E6505B /* IntroMiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +95,7 @@
 		F4DB439F19680299001826C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5176D22F1B0BD8F400438C54 /* IntroMiKit.framework */,
-				5176D22D1B0BD87A00438C54 /* Debug-universal */,
+				51D88B2C1B0D44E700E6505B /* IntroMiKit.framework */,
 				51D70C061B0656E200E09789 /* GLKit.framework */,
 				F4DB43A019680299001826C4 /* Foundation.framework */,
 				F4DB43A219680299001826C4 /* CoreGraphics.framework */,
@@ -117,6 +116,7 @@
 		F4DB43A719680299001826C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5176D23B1B0D254F00438C54 /* introMi.png */,
 				51C8A0D91B091CCD00A9E404 /* CustomTableCell.h */,
 				51C8A0DA1B091CCD00A9E404 /* CustomTableCell.m */,
 				51C8A0DB1B091CCD00A9E404 /* en.lproj */,
@@ -145,7 +145,7 @@
 				F4DB439919680299001826C4 /* Sources */,
 				F4DB439A19680299001826C4 /* Frameworks */,
 				F4DB439B19680299001826C4 /* Resources */,
-				512A26ED1B095D2400750402 /* Embed Frameworks */,
+				51D88B321B0D58E600E6505B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,8 +194,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5176D23C1B0D254F00438C54 /* introMi.png in Resources */,
 				51C87ACC1B092E4F00BF17B5 /* Main.storyboard in Resources */,
-				5176D22E1B0BD87A00438C54 /* Debug-universal in Resources */,
 				51C8A0E91B091CCD00A9E404 /* Images.xcassets in Resources */,
 				51C8A0E81B091CCD00A9E404 /* en.lproj in Resources */,
 				51C8A0EA1B091CCD00A9E404 /* Info.plist in Resources */,
@@ -266,7 +266,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
@@ -302,7 +302,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -326,12 +326,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntroMi/IntroMi-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/IntroMi/info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -354,12 +354,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntroMi/IntroMi-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/IntroMi/info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

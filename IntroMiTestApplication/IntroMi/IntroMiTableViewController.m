@@ -103,23 +103,33 @@
     
     self.serviceManager =[[ServiceManager alloc] initWith:@"user_token" andErr:^(int result) {
         
-      
+      if (result == 2)
+      {
+          NSLog(@"BLE is not supported on this device");
         
-        NSLog(@"this is the result %d", result);  // 3  if BLE not supported , 4 if supported
+      }
+      
+      else {
+          
+          [self.serviceManager startAdvertise];
+          [self.serviceManager  manualScan:^(Person *person) {
+              
+              
+              NSLog(@"found new user %@",person.name);
+              if (person != nil) {
+                  [personList addObject:person];
+                  [weakSelf.tableView reloadData];
+                  //[self performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+              }
+          } ];
+          
+      }
+        
     } ];
     
-    [self.serviceManager startAdvertise];
+    
 
-    [self.serviceManager  manualScan:^(Person *person) {
-        
-        
-        NSLog(@"found new user %@",person.name);
-        if (person != nil) {
-            [personList addObject:person];
-            [weakSelf.tableView reloadData];
-            //[self performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-        }
-    } ];
+ 
     
 }
 @end

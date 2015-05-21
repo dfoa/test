@@ -13,8 +13,8 @@
 @interface RegisterViewController: UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 - (IBAction)nameAction:(id)sender;
-//@property (strong, nonatomic) ServiceManager    *serviceManager;
 
+@property (strong,nonatomic) Register *reg;
 
 
 @end

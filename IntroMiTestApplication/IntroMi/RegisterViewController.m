@@ -7,18 +7,22 @@
 //
 
 #import "RegisterViewController.h"
-
+#import <IntroMiKit/IntroMiKit.h>
 
 
 
 
 @interface RegisterViewController() {
     
-    NSMutableArray *personList;
+
+
+    
+    
 }
 @end
 
 @implementation RegisterViewController
+
 
 
 
@@ -44,15 +48,17 @@
     if ( _nameField.text.length!=0){
        
     
-    Register *r =   [[Register alloc] initWithUinqueId:@"123" andCompanyToken:@"fiix-xyz" andName:_nameField.text andCompletionHandler:^(int result) {
-       }
-         
+    self.reg  =  [[Register alloc] initWithUinqueId:@"123" andCompanyToken:@"fiix-xyz" andName:_nameField.text];
+    [self.reg doRegistration:^(int result) {
+       
+      //check results here
+    }
                        andConnectionErrors:^(NSString *error) {
                            
                        } ];
-        
-
-    }
+       }
 
 }
+    
+    
 @end
