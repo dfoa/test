@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/Person.h</key>
 		<data>
-		JroZJJTmNfs/JPpa3cE1K+d5eFE=
+		HLYNdGpcRUCuG3ka2AbJRAShnxA=
 		</data>
 		<key>Headers/Register.h</key>
 		<data>
-		lqZCbo0AfYyd7WFEcDGBkmHVnAg=
+		udUVP9U2zVIruLQTHq8JgOemKEU=
 		</data>
 		<key>Headers/ServiceManager.h</key>
 		<data>
-		5BRgrhiHGi7x+mWYe6cisn+N2f8=
+		ODJvTrPEU2aZYKZHXFNzsogjang=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -27,6 +27,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		KSa2kyLiupVDNUYB0sRsvqnn+hE=
+		</data>
+		<key>PrivateHeaders/Errors.h</key>
+		<data>
+		4Drk1ZSFQ+W3Lq8yR77/UVIvCyI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -37,19 +41,23 @@
 		</data>
 		<key>Headers/Person.h</key>
 		<data>
-		JroZJJTmNfs/JPpa3cE1K+d5eFE=
+		HLYNdGpcRUCuG3ka2AbJRAShnxA=
 		</data>
 		<key>Headers/Register.h</key>
 		<data>
-		lqZCbo0AfYyd7WFEcDGBkmHVnAg=
+		udUVP9U2zVIruLQTHq8JgOemKEU=
 		</data>
 		<key>Headers/ServiceManager.h</key>
 		<data>
-		5BRgrhiHGi7x+mWYe6cisn+N2f8=
+		ODJvTrPEU2aZYKZHXFNzsogjang=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		KSa2kyLiupVDNUYB0sRsvqnn+hE=
+		</data>
+		<key>PrivateHeaders/Errors.h</key>
+		<data>
+		4Drk1ZSFQ+W3Lq8yR77/UVIvCyI=
 		</data>
 	</dict>
 	<key>rules</key>
