@@ -19,7 +19,7 @@
 
 @interface IntroMiTableViewController () {
     
-
+    __block  bool supported;
    
     NSMutableArray *personList;
 }
@@ -99,37 +99,50 @@
     
  
     
-    __weak typeof(self) weakSelf = self;
+    
     
     self.serviceManager =[[ServiceManager alloc] initWith:@"user_token" andErr:^(int result) {
+        
+        NSLog(@"got result %d", result);
+        
         
       if (result == 2)
       {
           NSLog(@"BLE is not supported on this device");
-        
+          supported = false;
+          
       }
-      
       else {
-          
-          [self.serviceManager startAdvertise];
-          [self.serviceManager  manualScan:^(Person *person) {
-              
-              
-              NSLog(@"found new user %@",person.name);
-              if (person != nil) {
-                  [personList addObject:person];
-                  [weakSelf.tableView reloadData];
-                  //[self performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-              }
-          } ];
-          
+          supported = true;
       }
         
-    } ];
+                          } ];
+      
     
-    
-
+   if(supported) [self startService];
  
+}
+
+    -(void) startService  {
+        
+        
+        __weak typeof(self) weakSelf = self;
+        [self.serviceManager startAdvertise];
+        [self.serviceManager  manualScan:^(Person *person) {
+            
+            
+            NSLog(@"found new user %@",person.name);
+            if (person != nil) {
+                [personList addObject:person];
+                [weakSelf.tableView reloadData];
+                //[self performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+                
+            }
+        } ];
+        
+    
+    
+    
     
 }
 @end
